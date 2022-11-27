@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body >
+    <div class="container">
+        <form class="form">
+            <fieldset class="from__fieldset">
+                <legend class="from__legend"> personal data </legend>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            FirstName*:
+                        </span> 
+                        <input class="form__field"
+                        name="firstName" required> </label>
+                </p>
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            LastName*:
+                        </span>
+                        <input class="form__field" 
+                        name="lastName" required>
+                    </label>
+                </p>
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            Disabled:
+                        </span>
+                        <input class="form__field" 
+                        name="disabled" disabled value="Text to red">
+                    </label>
+                </p>
+               <p>
+                    <label> 
+                        <span class="form__labelText">
+                            Read-only:
+                        </span>
+                        <input class="form__field" 
+                        name="readonly" readonly 
+                        value="Just some text">
+                    </label>
+                </p> 
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            Eyes olor:
+                        </span>
+                        <select class="form__field form__field--select"
+                        name="eyesColor">
+                        <option value="">blue</option>
+                        <option value="">green</option>
+                        <option value="">brown</option>
+                    </select>
+                    </label>
+                </p>
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            Height:
+                        </span>
+                        <input class="form__field"  type="range"
+                        name="Height" 
+                        min="o" max="220">
+                    </label>
+                </p>
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            CV:
+                        </span>
+                        <input class="form__field" 
+                        name="cv" type="file">
+                    </label>
+                </p>
+                <p>
+                    <label> 
+                        <span class="form__labelText">
+                            About you:
+                        </span>
+                        <textarea class="form__field form__field--textarea" name="description" id="" cols="30" rows="10"></textarea>
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button class="from__butten">Send</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
